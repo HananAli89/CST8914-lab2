@@ -8,15 +8,16 @@
 
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover that will output "Hello World":</p>
+    <p>Trigger a function on hover, focus, and click that will output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
-    <p id="demo"></p>
-</body>
+    <button onmouseover="myFunction()" onfocus="myFunction()" onclick="myFunction()">Action!</button>
+    <p id="demo" aria-live="polite"></p>
 <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "Hello World";
     }
 </script>
+
+</body>
 
 </html>
